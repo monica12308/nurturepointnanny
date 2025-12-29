@@ -1,0 +1,454 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>NurturePoint Nanny Group | Professional Nanny Services</title>
+  <meta name="description" content="NurturePoint Nanny Group provides reliable, nurturing, and structured in-home childcare support. Serving families with professionalism and care." />
+
+  <!-- Basic social preview -->
+  <meta property="og:title" content="NurturePoint Nanny Group" />
+  <meta property="og:description" content="Reliable, nurturing, structured in-home childcare support." />
+  <meta property="og:type" content="website" />
+
+  <style>
+    :root{
+      --bg:#0b0f14;
+      --card:#111826;
+      --text:#e8eef7;
+      --muted:#b7c3d6;
+      --line:rgba(255,255,255,.10);
+      --accent:#7aa2ff;
+      --accent2:#6ee7b7;
+      --shadow: 0 18px 60px rgba(0,0,0,.35);
+      --radius: 18px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      color:var(--text);
+      background: radial-gradient(1200px 600px at 15% 10%, rgba(122,162,255,.22), transparent 60%),
+                  radial-gradient(900px 500px at 85% 0%, rgba(110,231,183,.18), transparent 55%),
+                  var(--bg);
+      line-height:1.5;
+    }
+    a{color:inherit; text-decoration:none}
+    .container{max-width:1100px; margin:0 auto; padding:0 20px}
+    .nav{
+      position:sticky; top:0; z-index:20;
+      backdrop-filter: blur(10px);
+      background: rgba(11,15,20,.65);
+      border-bottom:1px solid var(--line);
+    }
+    .nav-inner{
+      display:flex; align-items:center; justify-content:space-between;
+      padding:14px 0;
+      gap:16px;
+    }
+    .brand{
+      display:flex; align-items:center; gap:10px; font-weight:700; letter-spacing:.2px;
+    }
+    .logo{
+      width:36px; height:36px; border-radius:12px;
+      background: linear-gradient(135deg, rgba(122,162,255,.9), rgba(110,231,183,.9));
+      box-shadow: 0 10px 30px rgba(122,162,255,.18);
+    }
+    .nav-links{
+      display:flex; gap:18px; align-items:center;
+      font-size:14px; color:var(--muted);
+    }
+    .nav-links a{padding:8px 10px; border-radius:12px}
+    .nav-links a:hover{background:rgba(255,255,255,.06); color:var(--text)}
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center;
+      padding:12px 14px;
+      border-radius:14px;
+      border:1px solid rgba(255,255,255,.14);
+      background: rgba(255,255,255,.06);
+      color:var(--text);
+      font-weight:600;
+      cursor:pointer;
+      transition: transform .06s ease, background .2s ease;
+    }
+    .btn:hover{background: rgba(255,255,255,.10)}
+    .btn:active{transform: translateY(1px)}
+    .btn-primary{
+      border:none;
+      background: linear-gradient(135deg, rgba(122,162,255,.95), rgba(110,231,183,.90));
+      color:#071018;
+    }
+    .hero{
+      padding:64px 0 34px;
+    }
+    .hero-grid{
+      display:grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap:26px;
+      align-items:stretch;
+    }
+    .headline{
+      font-size:44px;
+      line-height:1.08;
+      margin:0 0 12px;
+      letter-spacing:-.5px;
+    }
+    .subhead{
+      margin:0 0 22px;
+      color:var(--muted);
+      font-size:16px;
+      max-width:62ch;
+    }
+    .hero-actions{display:flex; gap:12px; flex-wrap:wrap}
+    .pillbar{display:flex; flex-wrap:wrap; gap:10px; margin-top:22px}
+    .pill{
+      font-size:13px; color:var(--muted);
+      padding:8px 10px;
+      border:1px solid var(--line);
+      border-radius:999px;
+      background: rgba(255,255,255,.04);
+    }
+    .card{
+      background: rgba(17,24,38,.75);
+      border:1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+    .hero-card{
+      padding:18px;
+      display:flex;
+      flex-direction:column;
+      gap:14px;
+    }
+    .hero-card h3{margin:0; font-size:16px}
+    .hero-card p{margin:0; color:var(--muted); font-size:14px}
+    .mini{
+      padding:14px;
+      border-radius:16px;
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.04);
+    }
+    .mini strong{display:block; font-size:13px; margin-bottom:6px}
+    .mini span{color:var(--muted); font-size:13px}
+    .grid-3{
+      display:grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap:16px;
+    }
+    section{padding:34px 0}
+    .section-title{
+      margin:0 0 10px;
+      font-size:22px;
+      letter-spacing:-.2px;
+    }
+    .section-desc{
+      margin:0 0 18px;
+      color:var(--muted);
+      max-width:75ch;
+    }
+    .feature{
+      padding:18px;
+    }
+    .feature h4{margin:0 0 8px; font-size:16px}
+    .feature p{margin:0; color:var(--muted); font-size:14px}
+    .two-col{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:16px;
+      align-items:start;
+    }
+    .list{
+      margin:10px 0 0; padding:0 0 0 18px; color:var(--muted);
+    }
+    .list li{margin:6px 0}
+    .cta{
+      padding:22px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:14px;
+      flex-wrap:wrap;
+    }
+    .cta h3{margin:0; font-size:18px}
+    .cta p{margin:6px 0 0; color:var(--muted); font-size:14px}
+    .footer{
+      padding:26px 0 40px;
+      color:var(--muted);
+      font-size:13px;
+      border-top:1px solid var(--line);
+    }
+    .form{
+      display:grid;
+      gap:10px;
+      padding:18px;
+    }
+    input, textarea{
+      width:100%;
+      padding:12px 12px;
+      border-radius:14px;
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.04);
+      color:var(--text);
+      font-size:14px;
+      outline:none;
+    }
+    textarea{min-height:110px; resize:vertical}
+    label{font-size:13px; color:var(--muted)}
+    .note{font-size:12px; color:var(--muted)}
+    .kpi{
+      display:flex; gap:10px; flex-wrap:wrap; margin-top:8px;
+    }
+    .kpi .pill{background:rgba(122,162,255,.10); border-color:rgba(122,162,255,.25); color: #d9e5ff}
+    .kpi .pill.alt{background:rgba(110,231,183,.10); border-color:rgba(110,231,183,.25); color: #d6ffee}
+    @media (max-width: 900px){
+      .hero-grid{grid-template-columns:1fr}
+      .headline{font-size:36px}
+      .grid-3{grid-template-columns:1fr}
+      .two-col{grid-template-columns:1fr}
+      .nav-links{display:none}
+    }
+  </style>
+</head>
+
+<body>
+  <div class="nav">
+    <div class="container">
+      <div class="nav-inner">
+        <div class="brand">
+          <div class="logo" aria-hidden="true"></div>
+          <div>
+            NurturePoint Nanny Group
+            <div style="font-weight:500;color:var(--muted);font-size:12px;margin-top:2px;">Professional childcare support</div>
+          </div>
+        </div>
+
+        <div class="nav-links" aria-label="Primary navigation">
+          <a href="#services">Services</a>
+          <a href="#approach">Approach</a>
+          <a href="#process">Process</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <a class="btn btn-primary" href="#contact">Request availability</a>
+      </div>
+    </div>
+  </div>
+
+  <header class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div>
+          <h1 class="headline">Reliable, nurturing, structured in-home childcare.</h1>
+          <p class="subhead">
+            NurturePoint Nanny Group supports busy families with calm, consistent care—focused on safety,
+            routines, and age-appropriate development.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contact">Get in touch</a>
+            <a class="btn" href="#services">View services</a>
+          </div>
+
+          <div class="pillbar" aria-label="Highlights">
+            <div class="pill">Professional & dependable</div>
+            <div class="pill">Routine-focused care</div>
+            <div class="pill">Family-first communication</div>
+            <div class="pill">In-home support</div>
+          </div>
+        </div>
+
+        <div class="card hero-card">
+          <div class="mini">
+            <strong>Primary focus</strong>
+            <span>Consistency, structure, and a peaceful home rhythm.</span>
+          </div>
+          <div class="mini">
+            <strong>Ideal for</strong>
+            <span>Working parents who want reliable coverage and clear communication.</span>
+          </div>
+          <div class="mini">
+            <strong>Service area</strong>
+            <span>Michigan (Wixom, Novi, Northville, Walled Lake)</span>
+          </div>
+          <div class="kpi" aria-label="Trust indicators">
+            <div class="pill">Safety-minded</div>
+            <div class="pill alt">Routine builder</div>
+            <div class="pill">Parent updates</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="services">
+      <div class="container">
+        <h2 class="section-title">Services</h2>
+        <p class="section-desc">
+          Choose support that fits your family. If you’re unsure, tell me your schedule and your child’s age(s)
+          and I’ll recommend the simplest setup.
+        </p>
+
+        <div class="grid-3">
+          <div class="card feature">
+            <h4>Full-time / Part-time Nanny Care</h4>
+            <p>Consistent weekly care with routines, activities, meals/snacks (as directed), and structured play.</p>
+          </div>
+
+          <div class="card feature">
+            <h4>Backup & Temporary Coverage</h4>
+            <p>Short-term help for travel weeks, sick-day gaps, school breaks, or schedule transitions.</p>
+          </div>
+
+          <div class="card feature">
+            <h4>Household Support (Child-Centered)</h4>
+            <p>Light child-related tasks: tidying play areas, kids’ laundry, meal prep for children, and organization.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="approach">
+      <div class="container">
+        <h2 class="section-title">My approach</h2>
+        <p class="section-desc">
+          I focus on predictable routines and calm leadership—helping kids feel secure and helping parents feel supported.
+        </p>
+
+        <div class="two-col">
+          <div class="card" style="padding:18px;">
+            <h4 style="margin:0 0 10px;">What families can expect</h4>
+            <ul class="list">
+              <li>Consistent routines (meals, naps, transitions)</li>
+              <li>Clear communication and regular updates</li>
+              <li>Age-appropriate activities and structured play</li>
+              <li>Safety-first supervision and proactive planning</li>
+              <li>Respect for your household preferences and parenting style</li>
+            </ul>
+          </div>
+
+          <div class="card" style="padding:18px;">
+            <h4 style="margin:0 0 10px;">What I do differently</h4>
+            <ul class="list">
+              <li>Keep the home rhythm calm and organized</li>
+              <li>Model boundaries with warmth and consistency</li>
+              <li>Reduce chaos by planning the day in simple blocks</li>
+              <li>Make hand-offs easy for parents (quick recap, next steps)</li>
+              <li>Support long-term stability, not just “babysitting”</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="process">
+      <div class="container">
+        <h2 class="section-title">How it works</h2>
+        <p class="section-desc">A straightforward process that protects both the family and the caregiver.</p>
+
+        <div class="grid-3">
+          <div class="card feature">
+            <h4>1) Quick inquiry</h4>
+            <p>You share location, schedule, ages, and what support you want.</p>
+          </div>
+          <div class="card feature">
+            <h4>2) Call + fit check</h4>
+            <p>We align on expectations, routines, and household priorities.</p>
+          </div>
+          <div class="card feature">
+            <h4>3) Start with clarity</h4>
+            <p>We confirm schedule, policies, and a clean weekly plan.</p>
+          </div>
+        </div>
+
+        <div class="card cta" style="margin-top:16px;">
+          <div>
+            <h3>Want to see if I’m available for your schedule?</h3>
+            <p>Send a quick note and I’ll reply with next steps.</p>
+          </div>
+          <a class="btn btn-primary" href="#contact">Request availability</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <p class="section-desc">
+          Fill this out and I’ll respond with availability and a few follow-up questions.
+          (This form uses your email app by default—no account needed.)
+        </p>
+
+        <div class="two-col">
+          <div class="card">
+            <form class="form" id="contactForm">
+              <div>
+                <label for="name">Name</label>
+                <input id="name" name="name" placeholder="Your name" autocomplete="name" required />
+              </div>
+              <div>
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="you@email.com" autocomplete="email" required />
+              </div>
+              <div>
+                <label for="details">Message</label>
+                <textarea id="details" name="details" placeholder="Child age(s), location, schedule, start date, and what help you want." required></textarea>
+              </div>
+
+              <button class="btn btn-primary" type="submit">Send inquiry</button>
+              <div class="note">Note: Update the destination email in the code (see script below).</div>
+            </form>
+          </div>
+
+          <div class="card" style="padding:18px;">
+            <h4 style="margin:0 0 10px;">Recommended info to include</h4>
+            <ul class="list">
+              <li>City/area</li>
+              <li>Child age(s)</li>
+              <li>Days/hours needed</li>
+              <li>Start date and expected duration</li>
+              <li>Any must-haves (driving, meals, homework help, etc.)</li>
+            </ul>
+
+            <div style="margin-top:14px;" class="mini">
+              <strong>Business name</strong>
+              <span>NurturePoint Nanny Group</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div style="display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap;">
+        <div>© <span id="year"></span> NurturePoint Nanny Group. All rights reserved.</div>
+        <div style="opacity:.9;">Built for clarity, trust, and simple booking.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // 1) CHANGE THIS to your business email:
+    const DESTINATION_EMAIL = "youremail@example.com";
+
+    // Basic helpers
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    document.getElementById("contactForm").addEventListener("submit", function(e){
+      e.preventDefault();
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const details = document.getElementById("details").value.trim();
+
+      const subject = encodeURIComponent("NurturePoint Nanny Inquiry — " + name);
+      const body = encodeURIComponent(
+        `Name: ${name}\nEmail: ${email}\n\nMessage:\n${details}\n`
+      );
+
+      window.location.href = `mailto:${monicamac18@icloud.com}?subject=${subject}&body=${body}`;
+    });
+  </script>
+</body>
+</html>
